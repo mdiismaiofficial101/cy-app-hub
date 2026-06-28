@@ -1,0 +1,13 @@
+{
+  "name": "cy-app-hub",
+  "version": "1.0.0",
+  "description": "একটি প্রিমিয়াম অ্যাপ ডিসকভারি ও ডাউনলোড প্ল্যাটফর্ম। ইউজাররা এখানে আমার তৈরি অ্যাপগুলো আবিষ্কার করতে পারে এবং তাদের পছন্দের অ্যাপ স্টোর থেকে ডাউনলোড করতে পারে।",
+  "main": "sw.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

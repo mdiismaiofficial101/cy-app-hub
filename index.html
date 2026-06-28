@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta (set by JS from config) -->
+  <meta name="description" id="metaDescription" content="CY App Hub - Discover premium apps for your device">
+  <meta property="og:type" content="website">
+  <meta property="og:title" id="ogTitle" content="CY App Hub">
+  <meta property="og:description" id="ogDescription" content="Discover premium apps for your device">
+  <meta property="og:image" id="ogImage" content="">
+  <meta property="og:url" content="https://YOUR_USERNAME.github.io/cy-app-hub/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" id="twTitle" content="CY App Hub">
+  <meta name="twitter:description" id="twDescription" content="Discover premium apps for your device">
+  <meta name="twitter:image" id="twImage" content="">
+  <meta name="twitter:site" id="twSite" content="">
+
+  <title id="pageTitle">CY App Hub</title>
+
+  <link rel="icon" id="faviconLink" href="assets/icons/default-app.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" id="appleTouchIcon" href="assets/icons/default-app.svg">
+  <link rel="manifest" href="manifest.json">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="/" class="navbar-brand">
+        <div class="brand-icon">
+          <i class="fas fa-cube"></i>
+        </div>
+        <span class="brand-text">CY <small>App Hub</small></span>
+      </a>
+
+      <div class="navbar-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <div class="mobile-menu-header">
+        <span class="mobile-menu-title">Menu</span>
+        <button class="mobile-menu-close" id="mobileMenuClose">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="mobile-menu-body">
+        <a href="/" class="mobile-link active">Home</a>
+        <a href="#categories" class="mobile-link">Categories</a>
+        <a href="#featured" class="mobile-link">Featured</a>
+        <a href="/admin/" class="mobile-link">Admin</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-gradient"></div>
+      <div class="hero-particles" id="heroParticles"></div>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Premium Apps
+        </div>
+        <h1 class="hero-title">Discover <span class="gradient-text">Premium</span> Apps</h1>
+        <p class="hero-subtitle">Curated collection of high-quality apps for your everyday needs</p>
+        <div class="hero-search">
+          <div class="search-box">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" class="search-input" id="searchInput" placeholder="Search apps...">
+            <button class="search-clear" id="searchClear">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-number" id="totalApps">0</span>
+            <span class="hero-stat-label">Apps</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number" id="totalCategories">0</span>
+            <span class="hero-stat-label">Categories</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number" id="totalDownloads">0</span>
+            <span class="hero-stat-label">Downloads</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="section" id="categories">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Categories</h2>
+        <p class="section-subtitle">Browse apps by category</p>
+      </div>
+      <div class="categories-grid" id="categoriesGrid">
+        <!-- Generated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Section -->
+  <section class="section" id="featured">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Featured</h2>
+        <p class="section-subtitle">Handpicked premium apps</p>
+      </div>
+      <div class="apps-grid" id="featuredGrid">
+        <div class="skeleton-card">
+          <div class="skeleton-icon"></div>
+          <div class="skeleton-line skeleton-title"></div>
+          <div class="skeleton-line skeleton-desc"></div>
+          <div class="skeleton-line skeleton-desc short"></div>
+          <div class="skeleton-footer">
+            <div class="skeleton-badge"></div>
+            <div class="skeleton-button"></div>
+          </div>
+        </div>
+        <div class="skeleton-card">
+          <div class="skeleton-icon"></div>
+          <div class="skeleton-line skeleton-title"></div>
+          <div class="skeleton-line skeleton-desc"></div>
+          <div class="skeleton-line skeleton-desc short"></div>
+          <div class="skeleton-footer">
+            <div class="skeleton-badge"></div>
+            <div class="skeleton-button"></div>
+          </div>
+        </div>
+        <div class="skeleton-card">
+          <div class="skeleton-icon"></div>
+          <div class="skeleton-line skeleton-title"></div>
+          <div class="skeleton-line skeleton-desc"></div>
+          <div class="skeleton-line skeleton-desc short"></div>
+          <div class="skeleton-footer">
+            <div class="skeleton-badge"></div>
+            <div class="skeleton-button"></div>
+          </div>
+        </div>
+        <div class="skeleton-card">
+          <div class="skeleton-icon"></div>
+          <div class="skeleton-line skeleton-title"></div>
+          <div class="skeleton-line skeleton-desc"></div>
+          <div class="skeleton-line skeleton-desc short"></div>
+          <div class="skeleton-footer">
+            <div class="skeleton-badge"></div>
+            <div class="skeleton-button"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Apps Section -->
+  <section class="section" id="latest">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Latest Apps</h2>
+        <p class="section-subtitle">Newly added apps</p>
+      </div>
+      <div class="apps-grid" id="latestGrid">
+        <div class="skeleton-card">
+          <div class="skeleton-icon"></div>
+          <div class="skeleton-line skeleton-title"></div>
+          <div class="skeleton-line skeleton-desc"></div>
+          <div class="skeleton-line skeleton-desc short"></div>
+          <div class="skeleton-footer">
+            <div class="skeleton-badge"></div>
+            <div class="skeleton-button"></div>
+          </div>
+        </div>
+        <div class="skeleton-card">
+          <div class="skeleton-icon"></div>
+          <div class="skeleton-line skeleton-title"></div>
+          <div class="skeleton-line skeleton-desc"></div>
+          <div class="skeleton-line skeleton-desc short"></div>
+          <div class="skeleton-footer">
+            <div class="skeleton-badge"></div>
+            <div class="skeleton-button"></div>
+          </div>
+        </div>
+        <div class="skeleton-card">
+          <div class="skeleton-icon"></div>
+          <div class="skeleton-line skeleton-title"></div>
+          <div class="skeleton-line skeleton-desc"></div>
+          <div class="skeleton-line skeleton-desc short"></div>
+          <div class="skeleton-footer">
+            <div class="skeleton-badge"></div>
+            <div class="skeleton-button"></div>
+          </div>
+        </div>
+        <div class="skeleton-card">
+          <div class="skeleton-icon"></div>
+          <div class="skeleton-line skeleton-title"></div>
+          <div class="skeleton-line skeleton-desc"></div>
+          <div class="skeleton-line skeleton-desc short"></div>
+          <div class="skeleton-footer">
+            <div class="skeleton-badge"></div>
+            <div class="skeleton-button"></div>
+          </div>
+        </div>
+      </div>
+      <div class="section-footer">
+        <button class="btn btn-outline" id="loadMoreBtn">
+          <span>Load More</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Apps -->
+  <section class="section" id="section-popular" style="display:none;">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Popular</h2>
+        <p class="section-subtitle">Most downloaded apps</p>
+      </div>
+      <div class="apps-grid" id="popularGrid"></div>
+    </div>
+  </section>
+
+  <!-- Recommended Apps -->
+  <section class="section" id="section-recommended" style="display:none;">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Recommended</h2>
+        <p class="section-subtitle">Curated picks for you</p>
+      </div>
+      <div class="apps-grid" id="recommendedGrid"></div>
+    </div>
+  </section>
+
+  <!-- Trending Apps -->
+  <section class="section" id="section-trending" style="display:none;">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Trending</h2>
+        <p class="section-subtitle">What's hot right now</p>
+      </div>
+      <div class="apps-grid" id="trendingGrid"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-icon">
+            <i class="fas fa-cube"></i>
+          </div>
+          <p class="footer-desc">Discover premium apps crafted with passion and precision.</p>
+          <div class="footer-social" style="display:flex;gap:12px;margin-top:16px;"></div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="/">Home</a>
+          <a href="#featured">Featured</a>
+          <a href="#latest">Latest</a>
+          <a href="/admin/">Admin</a>
+        </div>
+        <div class="footer-links">
+          <h4>Support</h4>
+          <a href="#">Contact</a>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> CY App Hub. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Download Modal -->
+  <div class="modal-overlay" id="downloadModal">
+    <div class="modal">
+      <div class="modal-header">
+        <div class="modal-header-left">
+          <img class="modal-app-icon" id="modalAppIcon" src="" alt="">
+          <div>
+            <h3 class="modal-app-name" id="modalAppName">App Name</h3>
+            <p class="modal-app-version" id="modalAppVersion">v1.0.0</p>
+          </div>
+        </div>
+        <button class="modal-close" id="modalClose">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-desc">Choose your preferred store to download</p>
+        <div class="store-list" id="storeList">
+          <!-- Generated by JS -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script src="js/github-api.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

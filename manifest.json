@@ -1,0 +1,20 @@
+{
+  "name": "CY App Hub",
+  "short_name": "CY App Hub",
+  "description": "Discover premium apps for your device",
+  "start_url": "/cy-app-hub/",
+  "scope": "/cy-app-hub/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0a0a0f",
+  "theme_color": "#6c5ce7",
+  "categories": ["utilities", "entertainment"],
+  "icons": [
+    {
+      "src": "assets/icons/default-app.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

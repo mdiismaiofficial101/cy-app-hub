@@ -1,0 +1,50 @@
+{
+  "site": {
+    "title": "CY App Hub",
+    "description": "Discover premium apps for your device"
+  },
+  "hero": {
+    "image": "",
+    "title": "Discover Premium Apps",
+    "subtitle": "Curated collection of high-quality apps for your everyday needs",
+    "ctaText": "Explore Apps",
+    "ctaLink": "#featured"
+  },
+  "sections": {
+    "featured": true,
+    "latest": true,
+    "popular": true,
+    "recommended": true,
+    "trending": true
+  },
+  "stores": [
+    { "id": "google_play", "name": "Google Play", "icon": "fab fa-google-play", "color": "#4CAF50", "enabled": true },
+    { "id": "huawei", "name": "Huawei AppGallery", "icon": "fas fa-store", "color": "#E71D1D", "enabled": true },
+    { "id": "oppo", "name": "OPPO App Market", "icon": "fas fa-shopping-bag", "color": "#1A9E47", "enabled": true },
+    { "id": "vivo", "name": "vivo App Store", "icon": "fas fa-mobile-alt", "color": "#415fff", "enabled": true },
+    { "id": "xiaomi", "name": "Xiaomi GetApps", "icon": "fas fa-app-store", "color": "#FF6700", "enabled": true },
+    { "id": "aptoide", "name": "Aptoide", "icon": "fas fa-dice-d6", "color": "#7B68EE", "enabled": true },
+    { "id": "apkpure", "name": "APKPure", "icon": "fas fa-box", "color": "#E8734A", "enabled": true },
+    { "id": "apkmirror", "name": "APKMirror", "icon": "fas fa-copy", "color": "#2196F3", "enabled": true },
+    { "id": "direct_apk", "name": "Direct APK", "icon": "fas fa-file-archive", "color": "#6c5ce7", "enabled": true }
+  ],
+  "theme": {
+    "primaryColor": "#6c5ce7",
+    "accentColor": "#00cec9"
+  },
+  "footer": {
+    "description": "Discover premium apps crafted with passion and precision.",
+    "socialLinks": []
+  },
+  "contact": {
+    "email": "",
+    "phone": "",
+    "address": ""
+  },
+  "seo": {
+    "siteTitle": "CY App Hub",
+    "siteDescription": "Discover premium apps for your device. Curated collection of high-quality applications.",
+    "ogImage": "",
+    "twitterHandle": ""
+  }
+}
