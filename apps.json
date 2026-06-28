@@ -1,4 +1,29 @@
 {
-  "apps": [],
-  "lastUpdated": null
+  "apps": [
+    {
+      "id": "mdy_mqy9spf5",
+      "name": "mdy",
+      "category": "Tools",
+      "description": "eff5gg gtg",
+      "version": "1.1.0",
+      "featured": true,
+      "changelog": "",
+      "features": [
+        "hy"
+      ],
+      "stores": {
+        "apkmirror": "https://www.youtube.com/feed/homepage"
+      },
+      "icon": "https://res.cloudinary.com/drvztudsf/image/upload/v1782680247/cy-app-hub/apps/mdy/jwfxxg9giqmx0i7pz2ef.jpg",
+      "banner": "https://res.cloudinary.com/drvztudsf/image/upload/v1782680249/cy-app-hub/apps/mdy/vhb5ntkajh0mzj6tmoug.png",
+      "screenshots": [
+        "https://res.cloudinary.com/drvztudsf/image/upload/v1782680256/cy-app-hub/apps/mdy/screenshots/wu0osgogfzoou6pp7lyn.png",
+        "https://res.cloudinary.com/drvztudsf/image/upload/v1782680255/cy-app-hub/apps/mdy/screenshots/lpvcsxpoz9tyfmdgfc61.png"
+      ],
+      "publishDate": "2026-06-28T20:57:36.681Z",
+      "downloadCount": 0,
+      "viewCount": 0
+    }
+  ],
+  "lastUpdated": "2026-06-28T20:57:36.689Z"
 }
